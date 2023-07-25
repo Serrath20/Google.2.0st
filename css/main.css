@@ -1,0 +1,206 @@
+body{
+    /*margen*/
+    margin: 0;
+    padding: 0;
+    /*tamaño de la letra*/
+    font-size: 13px;
+    /*Tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************/
+/****************************/
+/**************************/
+/*NAVEGACION*/
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+display: flex;
+justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 300px;
+    /*Para las viñetas de la lista*/
+    list-style: none;
+    /*Alinear elementos en este caso de manera horizontal*/
+    display: flex;
+    /*centrar el contenido en el contenedor*/
+    justify-content: center;
+    /*Alineacion vertical*/
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    /*color del texto*/
+    color: rgb(21, 21, 21);
+    /*separar las letras*/
+    margin-right: 20px;
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Modfica el tamaño de la imagen al tamaño que tiene el contedor */
+    background-size: contain;
+    /* Para eliminar la repetición de elemento */
+    background-repeat: no-repeat;
+}
+nav .nav-right-section img{
+    /* Redondear los bordes */
+    border-radius: 30px;
+    /* Margen izquierdo (separa menú de imagen) */
+    margin-left: 20px;
+    width: 35px;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* MAIN */
+main{
+    margin-top: 130px;
+    text-align: center;
+}
+/* Sección logo */
+main .main-logo{
+    width: 550px;
+    /* 0-setea al margen de arriba y abajo   auto-setea en auto bordes de izquierda y derecha*/
+    /* Vertical | Horizontal */
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/* Logo */
+main .main-logo img{
+    height: 120px;
+}
+/*Seccion del buscador*/
+main .main-input{    
+    width: 530 px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+     /* Componentes flexibles y que se muevan */
+    /* CENTRADO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/*caja con bordes redondeador*/
+main .main-input-container{
+
+    /*borde: anchura de lines estilo color*/
+    border:1px solid #dfe1e5;
+    /*borde redondeado*/
+    border-radius: 20px;
+    width: 525px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*tamaño de la caja*/
+main .main-input input{
+    height: 30px;
+    border: none;
+    /*OUTLINE cuando selecciona el elemento*/
+    outline: none;
+    width: 450px;
+}
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 3%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+/**Botones*/
+main .main-bottons{
+    width: 550px;
+    margin: 0 auto;
+}
+main .main-bottons div{
+    /* INLINE BLOCK Los elementos se encuentren en la misma linea*/
+    display: inline-block;
+}
+main .main-bottons button{
+    background-color: #e5e7e9;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+/*sombra en un boton*/
+main .main-input-container:hover{
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 0 5px #20212447;
+}
+/**********************************************/
+/****************************************/
+/********************************/
+/* FOOTER */
+
+footer { 
+    width: 100%;
+    height: 20%;
+    display: flex;
+   justify-content: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    font-size: 14px;
+    margin: 75px auto;
+    align-content: flex-end;
+}
+footer .footer-right{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    list-style: none;
+    margin: center; 
+  }
+  footer .footer-left a {
+    color: #70757a;
+    margin: 30px;
+}
+  footer .footer-left{ 
+    display: flex;
+    justify-content: left;
+    margin-right: 10px;
+    list-style: none; 
+   
+  }
+  
+   footer .footer-right a{
+    color: #70757a;
+    margin: 30px;
+}
